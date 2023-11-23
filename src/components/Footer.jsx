@@ -4,7 +4,8 @@ const Footer = () => {
     const year = new Date().getFullYear()
 
   return (
-    <footer className="footer p-10 bg-neutral text-neutral-content">
+    <footer className="p-10 bg-neutral text-neutral-content">
+     <div className='footer container mx-auto px-4'>  
     <nav>
         <header className="footer-title text-2xl text-secondary">Dw-shop</header>
         <p className="text-lg text-center font-bold">2013 - {year}</p>
@@ -29,6 +30,7 @@ const Footer = () => {
         <a className="link link-hover">Privacy policy</a>
         <a className="link link-hover">Cookie policy</a>
       </nav>
+      </div> 
     </footer>
   )
 }

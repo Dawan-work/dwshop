@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Skeleton } from "./Skeleton";
+import { ErrorLayout } from "./ErrorLayout";
+import { ProductCard } from "./ProductCard";
 
 export const ProductListHome = () => {
   const [products, setProducts] = useState([]);
@@ -42,11 +44,10 @@ export const ProductListHome = () => {
       </div>
     );
   }
-
   return (
-    <div>
-      {products.map((p) => (
-        <p>{p.title}</p>
+    <div className="my-10 flex gap-10 flex-col justify-center md:grid md:grid-cols-2 lg:grid-cols-4">
+    {products.map((p) => (
+        <ProductCard product={p} key={p.id} />
       ))}
     </div>
   );

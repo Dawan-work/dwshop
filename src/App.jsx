@@ -17,7 +17,7 @@ export default function App() {
       {/* NavBar */}
       <Navbar />
       {/* Content Page (dynamic) */}
-      <main className="container mx-auto px-4 min-h-screen">
+      <main className="min-h-screen">
           <Routes>
             {/* Déclaration de chaques "routes" associé à son component */}
             {/* element = composant / path = href */}

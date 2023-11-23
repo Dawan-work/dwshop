@@ -1,7 +1,8 @@
+import { ProductListHome } from "../components/ProductListHome"
 
 export const Home = () => {
-  return (
 
+  return (
     <div>
       {/* HERO */}
       <div className="h-10 hero">
@@ -28,6 +29,7 @@ export const Home = () => {
            {/* LAST PRODUCTS */}
            <h2 className="text-3xl font-semibold">Nos derniers produits</h2>
             <div className="divider divider-secondary"></div>
+            <ProductListHome />
       </div>
     </div>
   

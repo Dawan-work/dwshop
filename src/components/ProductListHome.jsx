@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Skeleton } from "./Skeleton";
 import { ErrorLayout } from "./ErrorLayout";
 import { ProductCard } from "./ProductCard";
+import SkeletonCards from "./SkeletonCards";
 
 export const ProductListHome = () => {
   const [products, setProducts] = useState([]);
@@ -33,17 +33,13 @@ export const ProductListHome = () => {
     );
   }
 
+  
   if (isLoading) {
     return (
-      <div className="my-10 flex gap-10 flex-col justify-center md:grid md:grid-cols-2 lg:grid-cols-4">
-        {
-            [...Array(4)].map((_, index) => (
-                <Skeleton key={index} />
-            ))
-        }
-      </div>
+      <SkeletonCards size={4} />
     );
   }
+  
   return (
     <div className="my-10 flex gap-10 flex-col justify-center md:grid md:grid-cols-2 lg:grid-cols-4">
     {products.map((p) => (

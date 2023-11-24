@@ -1,4 +1,5 @@
 import { ProductListHome } from "../components/ProductListHome"
+import SkeletonCards from "../components/SkeletonCards"
 
 export const Home = () => {
 
@@ -29,7 +30,8 @@ export const Home = () => {
            {/* LAST PRODUCTS */}
            <h2 className="text-3xl font-semibold">Nos derniers produits</h2>
             <div className="divider divider-secondary"></div>
-            <ProductListHome />
+               <ProductListHome />
+        
       </div>
     </div>
   

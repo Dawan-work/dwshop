@@ -21,3 +21,25 @@
   z-index: 1;
 
 }
+
+.rc-pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rc-pagination-item {
+  background-color: transparent !important;
+  padding: 5px 8px;
+  border: none !important;
+  font-weight: bold;
+  box-shadow: black
+}
+
+.rc-pagination-item.rc-pagination-item-active {
+  background-color: #ff6b00 !important;
+  border-radius: 5px;
+}
+.rc-pagination-item.rc-pagination-item-active a {
+  color: white !important;
+}

@@ -8,6 +8,7 @@ import { Contact } from "./views/Contact";
 import { Products } from "./views/Products";
 import { NotFound } from "./views/NotFound";
 import { Home } from "./views/Home";
+import { ProductDetails } from "./views/ProductDetails";
 
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/details/:id" element={<ProductDetails />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
             <Route path="*" element={<NotFound />} />
